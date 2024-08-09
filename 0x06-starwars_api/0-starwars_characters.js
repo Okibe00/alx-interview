@@ -1,3 +1,4 @@
+#!/usr/bin/node
 /**
  * prints characters from a star wars movie
  **/
