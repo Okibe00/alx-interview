@@ -1,8 +1,13 @@
-#!/bin/python3
+#!/usr/bin/python3
+'''
+Technical interview questions
+coin change
+makeChange: return min coins required to make change
+'''
 
 def makeChange(coins, total):
     """create an the dp array"""
-    if total == 0:
+    if total <= 0:
         return 0
 
     dp = [total + 1] * (total + 1)
