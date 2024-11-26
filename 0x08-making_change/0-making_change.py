@@ -1,9 +1,9 @@
 #!/usr/bin/python3
-"""
+'''
 Technical interview questions
 coin change
 makeChange: return min coins required to make change
-"""
+'''
 
 def makeChange(coins, total):
     """create an the dp array"""
@@ -12,8 +12,12 @@ def makeChange(coins, total):
 
     dp = [total + 1] * (total + 1)
 
+    '''initalize the starting position dp[0]'''
     dp[0] = 0
 
+    '''loop through from 1 to total + 1
+    this breaks the problem down to smaller chunks
+    '''
     for amount in range(1, total + 1):
         for coin in coins:
             if amount - coin >= 0:
