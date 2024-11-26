@@ -32,7 +32,6 @@ def count_prime_moves(n, primes):
 
 
 def isWinner(x, nums):
-    '''driver program execute game'''
     if not nums or x == 0:
         return None
 
